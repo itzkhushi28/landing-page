@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Landing Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">MyLogo</div>
+    <nav class="navbar">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+    </nav>
+    <div class="menu-toggle">&#9776;</div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Welcome to Our Website</h1>
+    <p>Your one-stop solution for web development.</p>
+    <a href="#" class="btn">Get Started</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Follow us on:</p>
+    <div class="social">
+      <a href="#" target="_blank">Facebook</a>
+      <a href="#" target="_blank">Twitter</a>
+      <a href="#" target="_blank">Instagram</a>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const navbar = document.querySelector('.navbar');
+    toggle.addEventListener('click', () => {
+      navbar.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>
